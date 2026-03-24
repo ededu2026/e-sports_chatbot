@@ -1,0 +1,214 @@
+{
+  "games": [
+    {
+      "slug": "counter_strike_2",
+      "label": "Counter-Strike 2",
+      "source_file": "knowledge_base/sources/wikipedia/games/counter_strike_2.json",
+      "major_teams": [
+        "Team Spirit",
+        "Team Vitality",
+        "Natus Vincere",
+        "G2 Esports",
+        "FaZe Clan",
+        "Team Liquid"
+      ],
+      "covered_players": [
+        "donk",
+        "sh1ro",
+        "ZywOo",
+        "apEX",
+        "ropz",
+        "m0NESY",
+        "s1mple",
+        "Aleksib",
+        "FalleN"
+      ]
+    },
+    {
+      "slug": "valorant",
+      "label": "VALORANT",
+      "source_file": "knowledge_base/sources/wikipedia/games/valorant.json",
+      "major_teams": [
+        "Sentinels",
+        "Fnatic",
+        "Paper Rex",
+        "EDward Gaming",
+        "Team Liquid",
+        "G2 Esports"
+      ],
+      "covered_players": [
+        "TenZ",
+        "aspas",
+        "Derke"
+      ]
+    },
+    {
+      "slug": "league_of_legends",
+      "label": "League of Legends",
+      "source_file": "knowledge_base/sources/wikipedia/games/league_of_legends.json",
+      "major_teams": [
+        "T1",
+        "Gen.G",
+        "G2 Esports",
+        "Fnatic",
+        "Bilibili Gaming"
+      ],
+      "covered_players": [
+        "Faker",
+        "Chovy",
+        "Keria",
+        "Caps",
+        "Ruler"
+      ]
+    },
+    {
+      "slug": "dota_2",
+      "label": "Dota 2",
+      "source_file": "knowledge_base/sources/wikipedia/games/dota_2.json",
+      "major_teams": [
+        "Team Spirit",
+        "Team Liquid",
+        "Gaimin Gladiators"
+      ],
+      "covered_players": [
+        "N0tail"
+      ]
+    },
+    {
+      "slug": "apex_legends",
+      "label": "Apex Legends",
+      "source_file": "knowledge_base/sources/wikipedia/games/apex_legends.json",
+      "major_teams": [
+        "TSM",
+        "Team Falcons",
+        "Alliance"
+      ],
+      "covered_players": [
+        "ImperialHal"
+      ]
+    },
+    {
+      "slug": "rocket_league",
+      "label": "Rocket League",
+      "source_file": "knowledge_base/sources/wikipedia/games/rocket_league.json",
+      "major_teams": [
+        "Team Vitality",
+        "Karmine Corp",
+        "Gen.G"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "overwatch_2",
+      "label": "Overwatch 2",
+      "source_file": "knowledge_base/sources/wikipedia/games/overwatch_2.json",
+      "major_teams": [
+        "Crazy Raccoon",
+        "Team Falcons"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "rainbow_six_siege",
+      "label": "Rainbow Six Siege",
+      "source_file": "knowledge_base/sources/wikipedia/games/rainbow_six_siege.json",
+      "major_teams": [
+        "FaZe Clan",
+        "Team BDS",
+        "w7m esports"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "mobile_legends_bang_bang",
+      "label": "Mobile Legends: Bang Bang",
+      "source_file": "knowledge_base/sources/wikipedia/games/mobile_legends_bang_bang.json",
+      "major_teams": [
+        "ONIC",
+        "Blacklist International",
+        "Team Liquid"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "pubg_battlegrounds",
+      "label": "PUBG: Battlegrounds",
+      "source_file": "knowledge_base/sources/wikipedia/games/pubg_battlegrounds.json",
+      "major_teams": [
+        "Natus Vincere",
+        "FaZe Clan",
+        "Twisted Minds"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "pubg_mobile",
+      "label": "PUBG Mobile",
+      "source_file": "knowledge_base/sources/wikipedia/games/pubg_mobile.json",
+      "major_teams": [
+        "Alpha7 Esports",
+        "Team Spirit",
+        "S2G Esports"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "free_fire",
+      "label": "Free Fire",
+      "source_file": "knowledge_base/sources/wikipedia/games/free_fire.json",
+      "major_teams": [
+        "Fluxo",
+        "LOUD",
+        "Team Falcons"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "fortnite_battle_royale",
+      "label": "Fortnite",
+      "source_file": "knowledge_base/sources/wikipedia/games/fortnite_battle_royale.json",
+      "major_teams": [
+        "Team Falcons",
+        "Dignitas"
+      ],
+      "covered_players": []
+    },
+    {
+      "slug": "call_of_duty",
+      "label": "Call of Duty",
+      "source_file": "knowledge_base/sources/wikipedia/games/call_of_duty.json",
+      "major_teams": [
+        "OpTic Texas",
+        "Atlanta FaZe",
+        "Toronto Ultra"
+      ],
+      "covered_players": [
+        "Scump"
+      ]
+    },
+    {
+      "slug": "starcraft_ii",
+      "label": "StarCraft II",
+      "source_file": "knowledge_base/sources/wikipedia/games/starcraft_ii.json",
+      "major_teams": [
+        "BASILISK",
+        "ONSYDE Gaming"
+      ],
+      "covered_players": [
+        "Serral"
+      ]
+    },
+    {
+      "slug": "fighting_games",
+      "label": "Fighting Games",
+      "source_file": "knowledge_base/sources/wikipedia/players/sonicfox.json",
+      "major_teams": [
+        "FaZe Clan",
+        "Team Liquid"
+      ],
+      "covered_players": [
+        "SonicFox"
+      ]
+    }
+  ]
+}

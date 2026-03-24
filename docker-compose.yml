@@ -1,0 +1,55 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: esports-chatbot-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: esports-chatbot-app
+    depends_on:
+      - ollama
+      - redis
+      - qdrant
+    environment:
+      PORT: 8080
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: mistral
+      EMBEDDING_MODEL: nomic-embed-text
+      SYSTEM_NAME: Esports Arena AI
+      MAX_HISTORY_MESSAGES: 12
+      REQUEST_TIMEOUT_SECONDS: 90
+      REDIS_ADDR: redis:6379
+      REDIS_PASSWORD: ""
+      REDIS_DB: 0
+      REDIS_ENABLED: "true"
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_COLLECTION: esports_knowledge
+    ports:
+      - "8080:8080"
+
+  redis:
+    image: redis:7-alpine
+    container_name: esports-chatbot-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: esports-chatbot-qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+volumes:
+  ollama_data:
+  redis_data:
+  qdrant_data:

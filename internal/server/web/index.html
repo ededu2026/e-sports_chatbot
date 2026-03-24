@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esports Arena AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/web/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">EA</div>
+          <div>
+            <p class="eyebrow">Open Source</p>
+            <h1>Esports Arena AI</h1>
+          </div>
+        </div>
+
+        <button class="new-chat" id="newChatBtn">New chat</button>
+
+        <div class="sidebar-card conversations-card">
+          <div class="sidebar-card-head">
+            <p class="card-label">Recent conversations</p>
+          </div>
+          <div class="conversation-list" id="conversationList">
+            <p class="empty-sidebar">No conversations yet.</p>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="card-label">Model</p>
+          <p id="modelName">Checking local Ollama...</p>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Competitive gaming assistant</p>
+            <h2>Esports conversations for teams, players, and tournaments</h2>
+          </div>
+          <div class="status-pill" id="healthPill">Connecting...</div>
+        </header>
+
+        <section class="chat-frame">
+          <div class="chat-scroll" id="chatMessages">
+            <div class="welcome">
+              <div class="welcome-badge">Local + Open Source</div>
+              <h3>Ask about teams, tournaments, players, patches, metas, and match analysis.</h3>
+              <p>Start with a greeting or jump straight into your eSports question.</p>
+            </div>
+          </div>
+
+          <form class="composer" id="chatForm">
+            <label class="composer-label" for="messageInput">Message</label>
+            <textarea
+              id="messageInput"
+              name="message"
+              rows="1"
+              placeholder="Ask about CS2 majors, Valorant Champions, Faker, drafts, patch impact..."
+            ></textarea>
+            <div class="composer-actions">
+              <p class="composer-hint">Responds in the user's language whenever possible.</p>
+              <button type="submit" id="sendBtn">Send</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <template id="messageTemplate">
+      <article class="message">
+        <div class="avatar"></div>
+        <div class="bubble-wrap">
+          <div class="meta-row">
+            <span class="role"></span>
+            <span class="meta"></span>
+          </div>
+          <div class="bubble"></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="/web/app.js" defer></script>
+  </body>
+</html>
